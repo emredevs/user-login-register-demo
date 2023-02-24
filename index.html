@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div id="error"></div>
+    <div class="container">
+      <form class="userForm">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="userPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="userPassword" />
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="save">
+          kayıt ol
+        </button>
+        <button type="reset" class="btn btn-danger">Temizle</button>
+      </form>
+
+      <form class="userForm">
+        <div class="mb-3">
+          <label for="emailLogin" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="emailLogin"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="userPasswordLogin" class="form-label">Password</label>
+          <input type="password" class="form-control" id="userPasswordLogin" />
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="login">giriş</button>
+        <button type="reset" class="btn btn-danger">Temizle</button>
+      </form>
+    </div>
+    <div class="users">
+      <h2>eklenen kullanıcı bilgileri</h2>
+      <ul id="list"></ul>
+    </div>
+    <script src="js/login.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
